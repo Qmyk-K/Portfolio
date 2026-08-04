@@ -31,7 +31,7 @@ UWAGA (do zweryfikowania przez operatora):
     szablonem importu Enova i popraw nazwy, ktore sie nie zgadzaja.
 
 URUCHOMIENIE:
-    python odszyfruj_i_zestaw_enova_v16.py
+    python odszyfruj_i_zestaw_enova.py
 """
 
 import os
@@ -105,7 +105,6 @@ NFZ_REGION_KOD = {
 }
 
 # ======================= KOLUMNY ENOVA =======================
-# Dokladna lista i kolejnosc kolumn potwierdzona przez Kamila (realny szablon importu).
 # UWAGA: Last.Adres ma Gmine na poczatku bloku (za Wojewodztwem), a Powiat na koncu bloku.
 #        Last.AdresZamieszkania / Last.AdresDoKorespondencji NIE MAJA pola Gmina,
 #        a Powiat jest zaraz po Wojewodztwie (inny uklad niz w Last.Adres).
