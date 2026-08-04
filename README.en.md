@@ -25,3 +25,5 @@ Analytics and BI projects. Each folder is a standalone project with its own case
 ---
 
 More projects in progress.
+
+**LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)

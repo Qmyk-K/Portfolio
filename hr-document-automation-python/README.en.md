@@ -64,3 +64,5 @@ python odszyfruj_i_zestaw_enova.py
 ---
 
 **Note:** the names of a few "always empty" columns (phone, fax, PO box, ID document) follow Enova's naming convention as working assumptions – before a real import, compare the `ENOVA_COLUMNS` list against the actual import template.
+
+**LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)

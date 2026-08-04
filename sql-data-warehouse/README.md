@@ -30,7 +30,7 @@ Cel: zaprojektować i zbudować hurtownię danych w architekturze medalowej (Bro
 
 ## 2. Architektura danych
 
-![Architektura danych](docs/data_architecture.svg)
+![Architektura danych](docs/data_architecture.png)
 
 Trzy warstwy, każda z jasno określoną odpowiedzialnością:
 
@@ -101,7 +101,7 @@ sql-data-warehouse/
 │   └── source_erp/
 │
 ├── docs/                        # dokumentacja i diagramy
-│   ├── data_architecture.svg
+│   ├── data_architecture.png
 │   ├── data_flow.svg
 │   ├── data_integration.svg
 │   ├── data_model.svg
@@ -140,3 +140,6 @@ sql-data-warehouse/
 
 T-SQL (widoki, procedury składowane, `ROW_NUMBER`, `LEAD`, `BULK INSERT`) · projektowanie architektury medalowej (Bronze/Silver/Gold) · modelowanie gwiazdy (klucze surogatne, wymiary, fakty) · czyszczenie i standaryzacja danych · pisanie testów jakości danych · dokumentowanie modelu danych i konwencji nazewnictwa.
 
+---
+
+**LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)

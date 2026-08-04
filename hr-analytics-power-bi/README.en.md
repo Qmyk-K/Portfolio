@@ -173,3 +173,5 @@ Power Query (data cleaning, surrogate key building, custom columns) · star-sche
 ---
 
 **Data source:** IBM HR Analytics Employee Attrition & Performance (publicly available demo dataset).
+
+**LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)

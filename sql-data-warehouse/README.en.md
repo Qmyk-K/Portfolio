@@ -30,7 +30,7 @@ Goal: design and build a data warehouse using medallion architecture (Bronze / S
 
 ## 2. Data architecture
 
-![Data architecture](docs/data_architecture.svg)
+![Data architecture](docs/data_architecture.png)
 
 Three layers, each with a clearly defined responsibility:
 
@@ -101,7 +101,7 @@ sql-data-warehouse/
 │   └── source_erp/
 │
 ├── docs/                        # documentation and diagrams
-│   ├── data_architecture.svg
+│   ├── data_architecture.png
 │   ├── data_flow.svg
 │   ├── data_integration.svg
 │   ├── data_model.svg
@@ -141,3 +141,5 @@ sql-data-warehouse/
 T-SQL (views, stored procedures, `ROW_NUMBER`, `LEAD`, `BULK INSERT`) · medallion architecture design (Bronze/Silver/Gold) · star-schema modeling (surrogate keys, dimensions, facts) · data cleaning and standardization · writing data quality tests · documenting a data model and its naming conventions.
 
 ---
+
+**LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)

@@ -173,3 +173,5 @@ Power Query (czyszczenie, budowa kluczy, kolumny niestandardowe) · modelowanie 
 ---
 
 **Źródło danych:** IBM HR Analytics Employee Attrition & Performance (publicznie dostępny zbiór demonstracyjny).
+
+**LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)

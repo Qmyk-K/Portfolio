@@ -64,3 +64,5 @@ python odszyfruj_i_zestaw_enova.py
 ---
 
 **Uwaga:** nazwy części kolumn "zawsze pustych" (telefon, faks, skrzynka pocztowa, dokument tożsamości) to nazwy robocze wg konwencji Enova – przed pierwszym realnym importem warto porównać listę `ENOVA_COLUMNS` z prawdziwym szablonem importu.
+
+**LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)

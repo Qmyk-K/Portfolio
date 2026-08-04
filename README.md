@@ -25,3 +25,5 @@ Projekty analityczne i BI. Każdy folder to osobny, samodzielny projekt z własn
 ---
 
 Więcej projektów w przygotowaniu.
+
+**LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)
