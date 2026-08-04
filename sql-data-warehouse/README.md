@@ -2,7 +2,7 @@
 
 # SQL Data Warehouse: hurtownia danych od surowych CSV do modelu gwiazdy (SQL Server)
 
-Kompletny pipeline danych zbudowany w SQL Server: od surowych plików CSV z dwóch niezależnych systemów (CRM i ERP), przez czyszczenie i standaryzację, aż po gotowy do raportowania model gwiazdy. Projekt powstał jako praktyczne ćwiczenie z inżynierii danych, budowane krok po kroku w oparciu o kurs [Data With Baraa](https://github.com/DataWithBaraa/sql-data-warehouse-project), ale kod, komentarze, testy jakości i cała dokumentacja poniżej są moje własne.
+Kompletny pipeline danych zbudowany w SQL Server: od surowych plików CSV z dwóch niezależnych systemów (CRM i ERP), przez czyszczenie i standaryzację, aż po gotowy do raportowania model gwiazdy.
 
 ---
 
@@ -145,5 +145,7 @@ sql-data-warehouse/
 T-SQL (widoki, procedury składowane, `ROW_NUMBER`, `LEAD`, `BULK INSERT`) · projektowanie architektury medalowej (Bronze/Silver/Gold) · modelowanie gwiazdy (klucze surogatne, wymiary, fakty) · czyszczenie i standaryzacja danych · pisanie testów jakości danych · dokumentowanie modelu danych i konwencji nazewnictwa.
 
 ---
+
+**Uwaga o pochodzeniu projektu:** budowałem ten projekt korzystając z kursu [Data With Baraa - SQL Data Warehouse](https://github.com/DataWithBaraa/sql-data-warehouse-project) oraz z [tego schematu](https://candle-gosling-511.notion.site/SQL-Data-Warehouse-Project-2a234b251f128062a6fceb670faae78a) jako planu pracy. Kod SQL, komentarze, testy jakości, diagramy i cała dokumentacja w tym repozytorium są moje własne.
 
 **LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)

@@ -2,7 +2,7 @@
 
 # SQL Data Warehouse: raw CSV to a star schema (SQL Server)
 
-A complete data pipeline built in SQL Server: from raw CSV files coming out of two independent systems (CRM and ERP), through cleaning and standardization, to a report-ready star schema. The project was built as a hands-on data engineering exercise, following the [Data With Baraa](https://github.com/DataWithBaraa/sql-data-warehouse-project) course step by step, but the code, comments, quality tests, and all the documentation below are my own.
+A complete data pipeline built in SQL Server: from raw CSV files coming out of two independent systems (CRM and ERP), through cleaning and standardization, to a report-ready star schema.
 
 ---
 
@@ -145,5 +145,7 @@ sql-data-warehouse/
 T-SQL (views, stored procedures, `ROW_NUMBER`, `LEAD`, `BULK INSERT`) · medallion architecture design (Bronze/Silver/Gold) · star-schema modeling (surrogate keys, dimensions, facts) · data cleaning and standardization · writing data quality tests · documenting a data model and its naming conventions.
 
 ---
+
+**A note on this project's origin:** I built this project while working through the [Data With Baraa: SQL Data Warehouse](https://github.com/DataWithBaraa/sql-data-warehouse-project) course, using [this schema](https://candle-gosling-511.notion.site/SQL-Data-Warehouse-Project-2a234b251f128062a6fceb670faae78a) as a working plan. The SQL code, comments, quality tests, diagrams, and all documentation in this repository are my own.
 
 **LinkedIn:** [Kamil Krzosek](https://www.linkedin.com/in/kamil-krzosek-b17921418/)
