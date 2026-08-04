@@ -140,6 +140,3 @@ sql-data-warehouse/
 
 T-SQL (widoki, procedury składowane, `ROW_NUMBER`, `LEAD`, `BULK INSERT`) · projektowanie architektury medalowej (Bronze/Silver/Gold) · modelowanie gwiazdy (klucze surogatne, wymiary, fakty) · czyszczenie i standaryzacja danych · pisanie testów jakości danych · dokumentowanie modelu danych i konwencji nazewnictwa.
 
----
-
-**Uwaga o pochodzeniu projektu:** struktura folderów i ogólny przebieg budowy hurtowni zostały oparte na kursie [Data With Baraa - SQL Data Warehouse](https://github.com/DataWithBaraa/sql-data-warehouse-project) (licencja MIT). Zbiór danych (AdventureWorks CRM/ERP) pochodzi z tego samego źródła. Kod SQL, komentarze, testy jakości, diagramy i cała dokumentacja w tym repozytorium zostały napisane samodzielnie.
