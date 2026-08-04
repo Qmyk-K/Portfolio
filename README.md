@@ -4,6 +4,10 @@
 
 Projekty analityczne i BI. Każdy folder to osobny, samodzielny projekt z własnym opisem (case study), zrzutami ekranu i plikiem gotowym do otwarcia.
 
+## O mnie
+
+Mam 28 lat i zmieniam ścieżkę zawodową w stronę pracy z danymi. Najbardziej interesuje mnie modelowanie danych, inżynieria danych i analityka - stąd projekty w tym repozytorium, budowane od podstaw, żeby faktycznie zrozumieć, jak to działa, a nie tylko obejrzeć gotowy wynik.
+
 ## Projekty Power BI
 
 | Projekt | Opis | Stack |

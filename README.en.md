@@ -4,6 +4,10 @@
 
 Analytics and BI projects. Each folder is a standalone project with its own case study, screenshots, and a ready-to-open file.
 
+## About me
+
+I'm 28 and changing my career path toward working with data. I'm most interested in data modeling, data engineering, and analytics - hence the projects in this repository, built from the ground up to actually understand how things work, not just look at the finished result.
+
 ## Power BI Projects
 
 | Project | Description | Stack |
