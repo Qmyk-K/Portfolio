@@ -141,5 +141,3 @@ sql-data-warehouse/
 T-SQL (views, stored procedures, `ROW_NUMBER`, `LEAD`, `BULK INSERT`) · medallion architecture design (Bronze/Silver/Gold) · star-schema modeling (surrogate keys, dimensions, facts) · data cleaning and standardization · writing data quality tests · documenting a data model and its naming conventions.
 
 ---
-
-**A note on where this project came from:** the folder structure and the overall build sequence follow the [Data With Baraa: SQL Data Warehouse](https://github.com/DataWithBaraa/sql-data-warehouse-project) course (MIT license). The dataset (AdventureWorks CRM/ERP) comes from the same source. The SQL code, comments, quality tests, diagrams, and all documentation in this repository were written independently.
