@@ -1,0 +1,94 @@
+<svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1000" height="620" fill="#ffffff"/>
+  <text x="30" y="40" font-size="26" font-weight="700" fill="#1a1a1a">Przeplyw danych</text>
+  <text x="30" y="62" font-size="13" fill="#555555">Od plikow zrodlowych do widokow warstwy gold</text>
+
+  <!-- column headers -->
+  <text x="90" y="100" font-size="14" font-weight="600" text-anchor="middle" fill="#1a1a1a">Zrodla</text>
+  <text x="330" y="100" font-size="14" font-weight="600" text-anchor="middle" fill="#b46504">Bronze</text>
+  <text x="580" y="100" font-size="14" font-weight="600" text-anchor="middle" fill="#555555">Silver</text>
+  <text x="850" y="100" font-size="14" font-weight="600" text-anchor="middle" fill="#8a7300">Gold</text>
+
+  <!-- source folders -->
+  <rect x="30" y="130" width="120" height="46" fill="#f2f2f2" stroke="#999999" rx="6"/>
+  <text x="90" y="158" font-size="12" text-anchor="middle" fill="#333333">CRM (3 pliki CSV)</text>
+
+  <rect x="30" y="430" width="120" height="46" fill="#f2f2f2" stroke="#999999" rx="6"/>
+  <text x="90" y="458" font-size="12" text-anchor="middle" fill="#333333">ERP (3 pliki CSV)</text>
+
+  <!-- bronze tables -->
+  <g font-size="11" fill="#5a3a00">
+    <rect x="270" y="120" width="180" height="34" fill="#fad7ac" stroke="#b46504" rx="5"/>
+    <text x="360" y="141" text-anchor="middle">crm_cust_info</text>
+    <rect x="270" y="164" width="180" height="34" fill="#fad7ac" stroke="#b46504" rx="5"/>
+    <text x="360" y="185" text-anchor="middle">crm_prd_info</text>
+    <rect x="270" y="208" width="180" height="34" fill="#fad7ac" stroke="#b46504" rx="5"/>
+    <text x="360" y="229" text-anchor="middle">crm_sales_details</text>
+
+    <rect x="270" y="410" width="180" height="34" fill="#fad7ac" stroke="#b46504" rx="5"/>
+    <text x="360" y="431" text-anchor="middle">erp_cust_az12</text>
+    <rect x="270" y="454" width="180" height="34" fill="#fad7ac" stroke="#b46504" rx="5"/>
+    <text x="360" y="475" text-anchor="middle">erp_loc_a101</text>
+    <rect x="270" y="498" width="180" height="34" fill="#fad7ac" stroke="#b46504" rx="5"/>
+    <text x="360" y="519" text-anchor="middle">erp_px_cat_g1v2</text>
+  </g>
+
+  <!-- silver tables -->
+  <g font-size="11" fill="#333333">
+    <rect x="520" y="120" width="180" height="34" fill="#e8e8e8" stroke="#777777" rx="5"/>
+    <text x="610" y="141" text-anchor="middle">crm_cust_info</text>
+    <rect x="520" y="164" width="180" height="34" fill="#e8e8e8" stroke="#777777" rx="5"/>
+    <text x="610" y="185" text-anchor="middle">crm_prd_info</text>
+    <rect x="520" y="208" width="180" height="34" fill="#e8e8e8" stroke="#777777" rx="5"/>
+    <text x="610" y="229" text-anchor="middle">crm_sales_details</text>
+
+    <rect x="520" y="410" width="180" height="34" fill="#e8e8e8" stroke="#777777" rx="5"/>
+    <text x="610" y="431" text-anchor="middle">erp_cust_az12</text>
+    <rect x="520" y="454" width="180" height="34" fill="#e8e8e8" stroke="#777777" rx="5"/>
+    <text x="610" y="475" text-anchor="middle">erp_loc_a101</text>
+    <rect x="520" y="498" width="180" height="34" fill="#e8e8e8" stroke="#777777" rx="5"/>
+    <text x="610" y="519" text-anchor="middle">erp_px_cat_g1v2</text>
+  </g>
+
+  <!-- gold views -->
+  <g font-size="12" fill="#6b5900" font-weight="600">
+    <rect x="770" y="150" width="180" height="40" fill="#fff2cc" stroke="#d6b656" rx="5"/>
+    <text x="860" y="175" text-anchor="middle">fact_sales</text>
+    <rect x="770" y="280" width="180" height="40" fill="#fff2cc" stroke="#d6b656" rx="5"/>
+    <text x="860" y="305" text-anchor="middle">dim_customers</text>
+    <rect x="770" y="420" width="180" height="40" fill="#fff2cc" stroke="#d6b656" rx="5"/>
+    <text x="860" y="445" text-anchor="middle">dim_products</text>
+  </g>
+
+  <defs>
+    <marker id="arr2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#888888"/>
+    </marker>
+  </defs>
+
+  <!-- source -> bronze -->
+  <path d="M150 153 C210 153, 210 137, 270 137" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M150 153 C210 153, 210 181, 270 181" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M150 153 C210 153, 210 225, 270 225" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M150 453 C210 453, 210 427, 270 427" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M150 453 C210 453, 210 471, 270 471" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M150 453 C210 453, 210 515, 270 515" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+
+  <!-- bronze -> silver (1:1, straight) -->
+  <path d="M450 137 H520" stroke="#888888" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M450 181 H520" stroke="#888888" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M450 225 H520" stroke="#888888" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M450 427 H520" stroke="#888888" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M450 471 H520" stroke="#888888" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M450 515 H520" stroke="#888888" stroke-width="1.5" marker-end="url(#arr2)"/>
+
+  <!-- silver -> gold -->
+  <path d="M700 137 C740 137, 740 170, 770 170" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M700 181 C740 181, 740 300, 770 300" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M700 225 C740 225, 740 190, 770 190" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M700 427 C740 427, 740 300, 770 300" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M700 471 C740 471, 740 300, 770 300" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <path d="M700 515 C740 515, 740 440, 770 440" stroke="#888888" fill="none" stroke-width="1.5" marker-end="url(#arr2)"/>
+
+  <text x="30" y="580" font-size="11" fill="#777777">Bronze i silver ladowane pelnym reloadem (truncate + insert). Gold to widoki, przeliczane na bierzaco.</text>
+</svg>

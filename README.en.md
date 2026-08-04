@@ -9,6 +9,7 @@ Analytics and BI projects. Each folder is a standalone project with its own case
 | Project | Description | Stack |
 |---|---|---|
 | [HR Analytics: Employee Attrition Analysis](hr-analytics-power-bi/) | Attrition analysis using the IBM HR Analytics dataset: a documented investigative process from the first hypothesis to a high-risk segment (Key Influencers, Top Segments, Decomposition Tree) | Power BI, DAX, Power Query |
+| [SQL Data Warehouse: raw CSV to a star schema](sql-data-warehouse/) | A data pipeline built with medallion architecture (Bronze/Silver/Gold): CRM and ERP integration, data cleaning and standardization, a BI-ready star schema, and custom data quality tests | SQL Server, T-SQL |
 
 ## Python Projects
 

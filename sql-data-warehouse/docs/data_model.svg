@@ -1,0 +1,78 @@
+<svg viewBox="0 0 1020 620" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1020" height="620" fill="#ffffff"/>
+  <text x="30" y="40" font-size="26" font-weight="700" fill="#1a1a1a">Model danych warstwy gold (schemat gwiazdy)</text>
+
+  <!-- dim_customers -->
+  <g>
+    <rect x="20" y="90" width="260" height="34" fill="#fff2cc" stroke="#d6b656" rx="4"/>
+    <text x="150" y="112" font-size="13" font-weight="700" text-anchor="middle" fill="#6b5900">gold.dim_customers</text>
+    <rect x="20" y="124" width="260" height="330" fill="#fffdf5" stroke="#d6b656"/>
+    <g font-size="11" fill="#333333">
+      <text x="32" y="146" font-weight="700">PK</text><text x="70" y="146">customer_key</text>
+      <text x="32" y="168">customer_id</text>
+      <text x="32" y="190">customer_number</text>
+      <text x="32" y="212">first_name</text>
+      <text x="32" y="234">last_name</text>
+      <text x="32" y="256">country</text>
+      <text x="32" y="278">marital_status</text>
+      <text x="32" y="300">gender</text>
+      <text x="32" y="322">birthdate</text>
+      <text x="32" y="344">create_date</text>
+    </g>
+  </g>
+
+  <!-- fact_sales -->
+  <g>
+    <rect x="380" y="90" width="260" height="34" fill="#dae8fc" stroke="#6c8ebf" rx="4"/>
+    <text x="510" y="112" font-size="13" font-weight="700" text-anchor="middle" fill="#1c3a63">gold.fact_sales</text>
+    <rect x="380" y="124" width="260" height="300" fill="#f7faff" stroke="#6c8ebf"/>
+    <g font-size="11" fill="#333333">
+      <text x="392" y="146">order_number</text>
+      <text x="392" y="168" font-weight="700" fill="#1c3a63">FK</text><text x="430" y="168">product_key</text>
+      <text x="392" y="190" font-weight="700" fill="#1c3a63">FK</text><text x="430" y="190">customer_key</text>
+      <text x="392" y="212">order_date</text>
+      <text x="392" y="234">shipping_date</text>
+      <text x="392" y="256">due_date</text>
+      <text x="392" y="278">sales_amount</text>
+      <text x="392" y="300">quantity</text>
+      <text x="392" y="322">price</text>
+    </g>
+  </g>
+
+  <!-- dim_products -->
+  <g>
+    <rect x="740" y="90" width="260" height="34" fill="#fff2cc" stroke="#d6b656" rx="4"/>
+    <text x="870" y="112" font-size="13" font-weight="700" text-anchor="middle" fill="#6b5900">gold.dim_products</text>
+    <rect x="740" y="124" width="260" height="370" fill="#fffdf5" stroke="#d6b656"/>
+    <g font-size="11" fill="#333333">
+      <text x="752" y="146" font-weight="700">PK</text><text x="790" y="146">product_key</text>
+      <text x="752" y="168">product_id</text>
+      <text x="752" y="190">product_number</text>
+      <text x="752" y="212">product_name</text>
+      <text x="752" y="234">category_id</text>
+      <text x="752" y="256">category</text>
+      <text x="752" y="278">subcategory</text>
+      <text x="752" y="300">maintenance</text>
+      <text x="752" y="322">cost</text>
+      <text x="752" y="344">product_line</text>
+      <text x="752" y="366">start_date</text>
+    </g>
+  </g>
+
+  <!-- connections -->
+  <defs>
+    <marker id="one" markerWidth="10" markerHeight="10" refX="0" refY="5" orient="auto">
+      <path d="M0,0 L0,10" stroke="#888" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <path d="M280 190 H380" stroke="#888888" stroke-width="1.5"/>
+  <path d="M640 190 H740" stroke="#888888" stroke-width="1.5"/>
+  <text x="330" y="184" font-size="10" text-anchor="middle" fill="#777777">1 : N</text>
+  <text x="690" y="184" font-size="10" text-anchor="middle" fill="#777777">1 : N</text>
+
+  <!-- note -->
+  <rect x="380" y="450" width="260" height="80" fill="#f5f5f5" stroke="#cccccc" rx="6"/>
+  <text x="510" y="472" font-size="12" font-weight="700" text-anchor="middle" fill="#333333">Reguła: sprzedaż</text>
+  <text x="510" y="496" font-size="11" text-anchor="middle" fill="#333333">sales_amount = quantity * price</text>
+  <text x="510" y="514" font-size="10" text-anchor="middle" fill="#777777">wymuszane w warstwie silver</text>
+</svg>
