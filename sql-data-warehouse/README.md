@@ -47,7 +47,9 @@ Dwa niezależne systemy, sześć plików CSV łącznie ok. 116 tys. wierszy (pat
 | CRM | `cust_info.csv`, `prd_info.csv`, `sales_details.csv` | klienci, produkty, pozycje zamówień sprzedażowych |
 | ERP | `CUST_AZ12.csv`, `LOC_A101.csv`, `PX_CAT_G1V2.csv` | data urodzenia i płeć, kraj klienta, kategorie produktów |
 
-Systemy nie mają wspólnego klucza w jednolitym formacie: CRM identyfikuje klienta przez `cst_key` (np. `AW00011000`), a ERP przez `cid` w dwóch różnych wariantach (`NASAW00011000` w jednym pliku, `AW-00011000` z myślnikiem w drugim). Zobacz [`docs/data_integration.svg`](docs/data_integration.svg) - to właśnie te rozjazdy trzeba było ujednolicić w warstwie silver.
+Systemy nie mają wspólnego klucza w jednolitym formacie: CRM identyfikuje klienta przez `cst_key` (np. `AW00011000`), a ERP przez `cid` w dwóch różnych wariantach (`NASAW00011000` w jednym pliku, `AW-00011000` z myślnikiem w drugim) - to właśnie te rozjazdy trzeba było ujednolicić w warstwie silver.
+
+![Model integracji](docs/data_integration.svg)
 
 ## 4. Warstwa Bronze
 
@@ -82,7 +84,9 @@ Dwa wymiary i jedna tabela faktów, jako widoki SQL (nie fizyczne tabele - w tej
 - `gold.dim_products`: bieżąca wersja każdego produktu (`prd_end_dt IS NULL`) wzbogacona o kategorię i podkategorię z ERP.
 - `gold.fact_sales`: pozycje zamówień połączone z obydwoma wymiarami przez klucze surogatne, nie przez naturalne identyfikatory ze źródła.
 
-Pełny katalog kolumn: [`docs/data_catalog.md`](docs/data_catalog.md). Konwencje nazewnictwa użyte w całym projekcie: [`docs/naming_conventions.md`](docs/naming_conventions.md). Przepływ danych między warstwami: [`docs/data_flow.svg`](docs/data_flow.svg).
+Pełny katalog kolumn: [`docs/data_catalog.md`](docs/data_catalog.md). Konwencje nazewnictwa użyte w całym projekcie: [`docs/naming_conventions.md`](docs/naming_conventions.md).
+
+![Przepływ danych](docs/data_flow.svg)
 
 ## 7. Testy jakości danych
 

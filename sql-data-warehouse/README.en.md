@@ -47,7 +47,9 @@ Two independent systems, six CSV files totaling around 116k rows (see [`datasets
 | CRM | `cust_info.csv`, `prd_info.csv`, `sales_details.csv` | customers, products, sales order line items |
 | ERP | `CUST_AZ12.csv`, `LOC_A101.csv`, `PX_CAT_G1V2.csv` | birthdate and gender, customer country, product categories |
 
-The two systems don't share a key in a single consistent format: CRM identifies a customer via `cst_key` (e.g. `AW00011000`), while ERP uses `cid` in two different variants (`NASAW00011000` in one file, `AW-00011000` with a hyphen in the other). See [`docs/data_integration.svg`](docs/data_integration.svg): these mismatches are exactly what had to be reconciled in the silver layer.
+The two systems don't share a key in a single consistent format: CRM identifies a customer via `cst_key` (e.g. `AW00011000`), while ERP uses `cid` in two different variants (`NASAW00011000` in one file, `AW-00011000` with a hyphen in the other): these mismatches are exactly what had to be reconciled in the silver layer.
+
+![Integration model](docs/data_integration.svg)
 
 ## 4. Bronze layer
 
@@ -82,7 +84,9 @@ Two dimensions and one fact table, implemented as SQL views (not physical tables
 - `gold.dim_products`: the current version of each product (`prd_end_dt IS NULL`), enriched with category and subcategory from ERP.
 - `gold.fact_sales`: order line items joined to both dimensions via surrogate keys, not the source system's natural identifiers.
 
-Full column catalog: [`docs/data_catalog.md`](docs/data_catalog.md). Naming conventions used throughout the project: [`docs/naming_conventions.md`](docs/naming_conventions.md). Data flow between layers: [`docs/data_flow.svg`](docs/data_flow.svg).
+Full column catalog: [`docs/data_catalog.md`](docs/data_catalog.md). Naming conventions used throughout the project: [`docs/naming_conventions.md`](docs/naming_conventions.md).
+
+![Data flow](docs/data_flow.svg)
 
 ## 7. Data quality tests
 
