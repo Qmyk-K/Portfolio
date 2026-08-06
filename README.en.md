@@ -25,6 +25,7 @@ I'm 28 and changing my career path toward working with data. I'm most interested
 | Project | Description | Stack |
 |---|---|---|
 | [SQL Data Warehouse: raw CSV to a star schema](sql-data-warehouse/) | A data pipeline built with medallion architecture (Bronze/Silver/Gold): CRM and ERP integration, data cleaning and standardization, a BI-ready star schema, and custom data quality tests | SQL Server, T-SQL |
+| [SQL EDA: exploratory data analysis and reporting](sql-eda/) | 13 SQL scripts on top of the warehouse: ranking analysis, segmentation, time trends, two reporting views. The findings and numbers in the README come from actually running the queries | SQL Server, T-SQL |
 
 ---
 

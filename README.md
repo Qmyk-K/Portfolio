@@ -25,6 +25,7 @@ Mam 28 lat i zmieniam ścieżkę zawodową w stronę pracy z danymi. Najbardziej
 | Projekt | Opis | Stack |
 |---|---|---|
 | [SQL Data Warehouse: hurtownia danych od CSV do modelu gwiazdy](sql-data-warehouse/) | Pipeline danych w architekturze medalowej (Bronze/Silver/Gold): integracja CRM i ERP, czyszczenie i standaryzacja danych, model gwiazdy gotowy pod BI, własne testy jakości danych | SQL Server, T-SQL |
+| [SQL EDA: eksploracyjna analiza danych i raporty](sql-eda/) | 13 skryptów SQL na hurtowni danych: analizy rankingowe, segmentacja, trendy w czasie, dwa widoki raportowe. Wnioski i liczby w README pochodzą z realnego uruchomienia zapytań | SQL Server, T-SQL |
 
 ---
 
